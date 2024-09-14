@@ -42,7 +42,7 @@
     transition: 0.5s;
     border-radius: var(--border-radius);
 }
-.menu ul .link:active{
+.menu ul .link.active{
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     box-shadow: 0px 2px 5px var(--shadow-color);
