@@ -11,7 +11,8 @@
   --tertiary-color: #32cd32; /* Lime Green - highlights or animations */
 
   /* Background Colors */
-  --background-dark: #121212; /* Dark for 3D depth */
+  --background-dark: #121212;
+  --body-background:#010103; /* Dark for 3D depth */
   --background-light: #f0f0f0; /* Light background for contrast sections */
   
   /* Text Colors */
@@ -32,4 +33,7 @@
 
   /* Border Radius */
   --border-radius: 8px; /* For a modern, slightly rounded look */
+}
+body{
+  background: var(--body-background);
 }

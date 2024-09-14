@@ -26,11 +26,11 @@
     color: var(--secondary-color);
     text-shadow: 0 0 5px var(--secondary-color), 0 0 10px var(--secondary-color), 0 0 15px var(--secondary-color), 0 0 20px var(--secondary-color), 0 0 25px var(--secondary-color), 0 0 30px var(--secondary-color), 0 0 35px var(--secondary-color);
 }
-.navbar .menu ul{
+.navbar .menu .big-screen-menu{
     display: flex;
     gap: 10px;
 }
-.navbar .menu ul .link{
+.navbar .menu .big-screen-menu .link{
     list-style: none;
     padding: 10px;
     color: var(--text-color-light);
@@ -42,13 +42,60 @@
     transition: 0.5s;
     border-radius: var(--border-radius);
 }
-.menu ul .link.active{
+.menu .big-screen-menu .link.active{
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     box-shadow: 0px 2px 5px var(--shadow-color);
 }
-.navbar .menu ul .link:hover{
+.navbar .menu .big-screen-menu .link:hover{
     background-color: var(--accent-blue);
     transform: translateY(-2px);
     box-shadow: 0px 4px 10px var(--shadow-color);
+}
+
+
+@media (max-width: 750px) {
+    .navbar .menu .big-screen-menu{
+        display: none;
+    }
+    .navbar .menu .small-screen-menu{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--background-dark);
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 10px var(--shadow-color);
+        z-index: 5;
+        padding: 0 5%;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .small-screen-menu.display{
+        max-height: 500px;
+    }
+    .navbar .menu .small-screen-menu .link{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        transition: 0.5s;
+        border-radius: var(--border-radius);
+    }
+    .menu .small-screen-menu .link.active{
+        background-color: var(--primary-color);
+        border-radius: var(--border-radius);
+        box-shadow: 0px 2px 5px var(--shadow-color);
+    }
+    .menu .small-screen-menu .link:hover{
+        background-color: var(--accent-blue);
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 10px var(--shadow-color);
+    }
 }
