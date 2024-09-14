@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { links } from '../Constant';
 import { NavLink } from 'react-router-dom';
-import open_Menu from '../../assets/light_menu.png';
-import close_Menu from '../../assets/light_close_menu.png';
+import menu_Open from '../../Component/Assets/light_menu.png';
+import menu_Close from '../../Component/Assets/light_close_menu.png';
+
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
   return (
     <div className='navbar'>
       <div className="logo">
-      ⭐Jayempire.
+        ⭐Jayempire.
       </div>
       <div className="menu">
         <div className='big-screen-menu'>
-        {
+          {
             links.map((link) => {
               return (
                 <NavLink key={link.id} to={link.path} className="link">
@@ -23,20 +28,22 @@ const Navbar = () => {
             })
           }
         </div>
-        <div className='small-screen-menu'>
-        {
-            links.map((link) => {
-              return (
-                <NavLink key={link.id} to={link.path} className="link">
-                  {link.title}
-                </NavLink>
-              )
-            })
-          }
+        <div className={isOpen ? "small-screen-menu open" : "small-screen-menu"}>
+          <div onClick={closeMenu} className='link-container'>
+            {
+              links.map((link) => {
+                return (
+                  <NavLink key={link.id} to={link.path} className="link">
+                    {link.title}
+                  </NavLink>
+                )
+              })
+            }
+          </div>
         </div>
       </div>
       <div className="menu-icons">
-        <img src="" alt="" srcset="" />
+        <img onClick={toggleMenu} src={isOpen ? menu_Close : menu_Open} alt="" />
       </div>
     </div>
   )
