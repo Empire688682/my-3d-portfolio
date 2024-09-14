@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.css';
+import { links } from '../Constant';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,11 +11,15 @@ const Navbar = () => {
       </div>
       <div className="menu">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Porfolio</li>
-          <li>Service</li>
-          <li>Contact</li>
+        {
+            links.map((link) => {
+              return (
+                <NavLink key={link.id} to={link.path} className="link">
+                  {link.title}
+                </NavLink>
+              )
+            })
+          }
         </ul>
       </div>
     </div>

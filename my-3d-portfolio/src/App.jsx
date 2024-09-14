@@ -41,7 +41,6 @@ const App = () => {
   return (
     <div className='app'>
      <Navbar/>
-      <Scene />
       <Footer/>
     </div>
   )
