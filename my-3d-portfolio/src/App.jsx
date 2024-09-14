@@ -3,6 +3,8 @@ import { Canvas } from '@react-three/fiber';
 import { MeshStandardMaterial, BoxGeometry } from 'three';
 import { useFrame } from '@react-three/fiber';
 import './App.css'
+import Navbar from './Component/Navbar/Navbar';
+import Footer from './Component/Footer/Footer';
 
 const SpinningBox = () => {
   const meshRef = useRef();
@@ -38,7 +40,9 @@ const Scene = () => {
 const App = () => {
   return (
     <div className='app'>
-      <Scene/>
+     <Navbar/>
+      <Scene />
+      <Footer/>
     </div>
   )
 }
