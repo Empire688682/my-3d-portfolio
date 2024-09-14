@@ -4,3 +4,32 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+:root {
+  /* Primary Colors */
+  --primary-color: #1e90ff; /* Dodger Blue - main accent */
+  --secondary-color: #ff6347; /* Tomato Red - for calls to action */
+  --tertiary-color: #32cd32; /* Lime Green - highlights or animations */
+
+  /* Background Colors */
+  --background-dark: #121212; /* Dark for 3D depth */
+  --background-light: #f0f0f0; /* Light background for contrast sections */
+  
+  /* Text Colors */
+  --text-color-light: #ffffff; /* White for text on dark background */
+  --text-color-dark: #333333; /* Dark text for light backgrounds */
+
+  /* Accent Colors */
+  --accent-blue: #00bfff; /* Lighter blue for accents */
+  --accent-orange: #ff4500; /* Orange Red for hover effects */
+  --accent-yellow: #ffd700; /* Golden Yellow for attention areas */
+
+  /* Grayscale */
+  --gray-light: #d3d3d3;
+  --gray-dark: #a9a9a9;
+  
+  /* Shadows */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Subtle shadow for 3D elements */
+
+  /* Border Radius */
+  --border-radius: 8px; /* For a modern, slightly rounded look */
+}
