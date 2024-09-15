@@ -107,7 +107,7 @@
         text-decoration: none;
         transition: 0.5s;
         border-radius: var(--border-radius);
-        color: var(--gray-dark);
+        color:var(--gray-dark);
         font-weight: 500;
     }
 
