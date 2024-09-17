@@ -130,7 +130,8 @@
     }
 
     .menu-icons img {
-        width: 35px;
+        width: 30px;
+        height: 30px;
         transition: .3s;
     }
 
