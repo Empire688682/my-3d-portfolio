@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber';
 import './App.css'
 import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/Footer/Footer';
-import Home from './Component/Home/Home';
+import Hero from './Component/Hero/Hero';
 
 const SpinningBox = () => {
   const meshRef = useRef();
@@ -42,7 +42,7 @@ const App = () => {
   return (
     <div className='app'>
      <Navbar/>
-      <Home/>
+      <Hero/>
       <Footer/>
     </div>
   )
