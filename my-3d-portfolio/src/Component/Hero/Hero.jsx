@@ -16,12 +16,7 @@ const Hero = () => {
         <h3 className="hero-subheading">I am a Fullstack Developer.</h3>
       </div>
       <div className="hero3d">
-      <Canvas>
-        <Suspense fallback={<CanvasLoader/>}>
-        <PerspectiveCamera makeDefault position={[0, 0, 3]} />
-        <HackerRoom />
-        </Suspense>
-      </Canvas>
+      
       </div>
     </div>
   )
