@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="header">
         <div className="wave_Con">
         <h1 className="hero-heading">Hello, I am Juwon</h1> 
-        
+        <p className='wave'>👋</p>
         </div>
         <h3 className="hero-subheading">I am a Fullstack Developer.</h3>
       </div>
