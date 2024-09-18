@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './Hero.css';
 import { Canvas } from '@react-three/fiber';
 import { PerspectiveCamera } from 'three/src/Three.js';
 import HackerRoom from '../HackerRoom/HackerRoom';
+import CanvasLoader from '../CanvasLoader/CanvasLoader';
 
 const Hero = () => {
   return (
@@ -16,8 +17,10 @@ const Hero = () => {
       </div>
       <div className="hero3d">
       <Canvas>
-       <PerspectiveCamera makeDefault position={[0, 0, 3]} />
-       <HackerRoom />
+        <Suspense fallback={<CanvasLoader/>}>
+        <PerspectiveCamera makeDefault position={[0, 0, 3]} />
+        <HackerRoom />
+        </Suspense>
       </Canvas>
       </div>
     </div>

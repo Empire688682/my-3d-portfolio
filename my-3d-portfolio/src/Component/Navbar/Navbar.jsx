@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { links } from '../Constant';
 import { NavLink } from 'react-router-dom';
-import menu_Open from '../../Component/Assets/light_menu.png';
-import menu_Close from '../../Component/Assets/light_close_menu.png';
+import menu_Open from '../../../src/assets/light_menu.png';
+import menu_Close from '../../../src/assets/light_close_menu.png';
 
 
 const Navbar = () => {
