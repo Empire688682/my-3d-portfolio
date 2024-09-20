@@ -21,7 +21,7 @@ const Computers = ({ isMobile }) => {
     />
     
     <pointLight intensity={1.2} position={[10, 10, 10]} />  // Increased intensity and added position for more effect
-    
+  
     <directionalLight
       intensity={1}
       position={[5, 10, 7]}  // Added directional light to brighten the scene
