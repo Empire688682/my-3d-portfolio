@@ -12,13 +12,15 @@ import {
   mongodb,
   git,
   figma,
-  meta,
-  starbucks,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  divas,
+  empireKitchen,
+  empireKitchen2,
+  hallmark1,
+  empirestore,
+  hallmark2,
+  homefittings,
+  ideajoter,
 } from "../assets";
 
 export const navLinks = [
@@ -188,7 +190,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: empireKitchen,
     source_code_link: "https://github.com/",
   },
   {
@@ -217,7 +219,57 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: divas,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Hallmark Studio",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: hallmark2,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Empire Store",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "paystack",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: empirestore,
     source_code_link: "https://github.com/",
   },
   {
@@ -242,7 +294,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: ideajoter,
     source_code_link: "https://github.com/",
   },
   {
@@ -258,8 +310,12 @@ const projects = [
         name: "css",
         color: "green-text-gradient",
       },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
     ],
-    image: tripguide,
+    image: homefittings,
     source_code_link: "https://github.com/",
   },
 ];

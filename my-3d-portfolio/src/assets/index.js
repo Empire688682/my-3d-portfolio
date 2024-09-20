@@ -24,9 +24,26 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import divas from "./divas.png";
+import empireKitchen from "./empireKitchen.png";
+import empireKitchen2 from "./empireKitchen-2.png";
+import hallmark1 from "./hallmark-1.png";
+import hallmark2 from "./hallmark-2.png";
+import homefittings from "./homefittings.png";
+import ideajoter from "./ideajoter.png";
+import empirestore from "./empirestore.png";
+
 
 export {
   logo,
+  hallmark2,
+  empirestore,
+  divas,
+  empireKitchen,
+  empireKitchen2,
+  hallmark1,
+  homefittings,
+  ideajoter,
   backend,
   creator,
   mobile,
