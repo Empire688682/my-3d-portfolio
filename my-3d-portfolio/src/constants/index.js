@@ -165,9 +165,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "e-Commerce Website",
+    name: "EmpireKitchen",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "EmpireKitchen is a food delivery platform that lets users easily browse, order, and manage meals from local restaurants. Enjoy quick, convenient service with a user-friendly interface and real-time order tracking.",
     tags: [
       {
         name: "react",
@@ -191,12 +191,12 @@ const projects = [
       },
     ],
     image: empireKitchen,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/Empire-Kitchen",
   },
   {
-    name: "Divas Collective",
+    name: "Divas Collection",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Divas Collection is your go-to platform for fashion, featuring a portfolio of stylish collections, an online shop for easy purchases, and a blog for the latest trends and tips.",
     tags: [
       {
         name: "nextjs",
@@ -220,12 +220,12 @@ const projects = [
       },
     ],
     image: divas,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/Home-of-Divas",
   },
   {
     name: "Hallmark Studio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Hallmark Studio is a premier architecture firm specializing in innovative design and sustainable solutions. Their portfolio showcases a range of projects that blend creativity with functionality",
     tags: [
       {
         name: "html",
@@ -241,20 +241,16 @@ const projects = [
       },
     ],
     image: hallmark2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/hallmarkStudio",
   },
   {
     name: "Empire Store",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Empire Store offers a curated selection of quality products, combining convenience with style. Discover and shop our exclusive collection today.",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
       },
       {
         name: "css",
@@ -264,18 +260,14 @@ const projects = [
         name: "javascript",
         color: "green-text-gradient",
       },
-      {
-        name: "paystack",
-        color: "pink-text-gradient",
-      },
     ],
     image: empirestore,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/E-Commerce",
   },
   {
     name: "Idea Jotter",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Idea Jotter is your go-to platform for brainstorming and organizing ideas effortlessly. Capture thoughts, create lists, and turn inspirations into actionable plans, all in one place.",
     tags: [
       {
         name: "react",
@@ -295,12 +287,12 @@ const projects = [
       },
     ],
     image: ideajoter,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/ideajotterJSX",
   },
   {
     name: "Home-Fittings",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Homefittings is a premier destination for high-quality building materials and professional estate management services. Offering a wide range of products and expert guidance.",
     tags: [
       {
         name: "react",
@@ -316,7 +308,7 @@ const projects = [
       },
     ],
     image: homefittings,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Empire688682/HomeFittings-Project",
   },
 ];
 
