@@ -6,14 +6,14 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#0a192f] py-24 px-5 flex flex-wrap justify-between gap-5">
-      <div className="flex-basis-1/3 mb-8">
+    <div className="bg-[#0a192f] py-24 px-5 flex flex-wrap justify-center gap-5">
+      <div className="flex-1 mb-8 min-w-[350px]">
         <h1 className="text-white text-2xl font-bold mb-5">About Me</h1>
         <p className="text-white">
         I'm a skilled Fullstack Web Developer and Software Developer with experience in JavaScript, PHP, Node.js, and database management, with expertise in frameworks like React, Next.js, Three.js, and more. I'm advancing my career step by step, always eager to learn and grow. As a fast learner, I collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life.
         </p>
       </div>
-      <div className="flex-basis-1/3 mb-8">
+      <div className="flex-1 mb-8 min-w-[350px]" >
         <h1 className="text-white text-2xl font-bold mb-5">Newsletter</h1>
         <div className="w-full">
           <p className="text-white">Stay updated with our latest trends</p>
@@ -23,9 +23,9 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="flex-basis-1/5 mb-8">
-        <p className="text-white">Let us be social</p>
-        <div className="flex items-center">
+      <div className="flex-1 mb-8">
+        <h1 className="text-white text-2xl font-bold mb-5">Let us be social</h1>
+        <div className="flex min-w-[350px]">
           <NavLink to='https://www.facebook.com/juwon.asehinde.7' className="text-white w-12 h-12 flex items-center justify-center"><FaFacebookF style={{ width: "25px", height: "25px" }} /></NavLink>
           <NavLink to='https://github.com/Empire688682' className="text-white w-12 h-12 flex items-center justify-center"><BsGithub style={{ width: "25px", height: "25px" }} /></NavLink>
           <NavLink to='https://www.instagram.com/jahwonempire/' className="text-white w-12 h-12 flex items-center justify-center"><BsInstagram style={{ width: "25px", height: "25px" }} /></NavLink>
