@@ -15,8 +15,6 @@ import {
   threejs,
   divas,
   empireKitchen,
-  empireKitchen2,
-  hallmark1,
   empirestore,
   hallmark2,
   homefittings,
@@ -31,6 +29,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -139,28 +141,35 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I was skeptical about creating a website that could truly reflect the elegance of our product, but Juwon not only exceeded my expectations but also shifted my belief from relying on WhatsApp sellers to owning a stunning e-commerce site.",
     name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    designation: "Founder",
+    company: "Divas Collection",
     image: "https://randomuser.me/api/portraits/women/9.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/70.jpg",
+      "I've never encountered a web developer as dedicated to their clients' success as Juwon.",
+    name: "Mr Samson",
+    designation: "CEO",
+    company: "of HomeFittings",
+    image: "https://randomuser.me/api/portraits/men/10.jpg",
   },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/69.jpg",
-  },
+ {
+  testimonial: "We never imagined our website could attract so much traffic until Juwon worked his magic. Highly recommend!",
+  name: "Emma Johnson",
+  designation: "Sales Executive",
+  company: "SamJunctions",
+  image: "https://randomuser.me/api/portraits/women/60.jpg",
+},
+{
+  testimonial: "Juwon's attention to detail and commitment to our goals helped elevate our website beyond our expectations!",
+  name: "David Smith",
+  designation: "Product Manager",
+  company: "Tech Innovations",
+  image: "https://randomuser.me/api/portraits/men/45.jpg",
+},
+
 ];
 
 const projects = [
