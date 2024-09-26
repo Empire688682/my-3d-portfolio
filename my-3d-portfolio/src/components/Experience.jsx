@@ -21,12 +21,11 @@ const ExperienceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full' style={{ backgroundColor: "white", borderRadius: "50%" }}>
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src='https://jayempire-3d.netlify.app/assets/logo-DBTLx3HS.ico'
+            alt="IMG"
             className='w-[60%] h-[60%] object-contain'
           />
         </div>
