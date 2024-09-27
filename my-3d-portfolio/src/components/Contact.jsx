@@ -1,34 +1,54 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import axios from "axios"
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
   });
-
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+  const sendEmail = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/emailSender", formData);
+      if (response.data.success) {
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        setMessage(response.data.message)
+        setInterval(() => {
+          setMessage('')
+        }, 3000);
+      }
+    } catch (error) {
+      console.log("ERROR:", error);
+      window.alert("An error occured")
+    }
+    finally {
+      setLoading(false);
+    }
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendEmail();
   };
 
   return (
@@ -43,43 +63,57 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4 px-3'>Your Name</span>
             <input
               type='text'
               name='name'
-              value={form.name}
+              value={formData.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4 px-3'>Your Subject</span>
+            <input
+              type='text'
+              name='subject'
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder="What's your good subject?"
+              className='bg-tertiary py-4 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+            />
+          </label>
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4 px-3'>Your email</span>
             <input
               type='email'
               name='email'
-              value={form.email}
+              value={formData.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='text-white font-medium mb-4 px-3'>Your Message</span>
             <textarea
               rows={7}
               name='message'
-              value={form.message}
+              value={formData.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-3 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
+          {
+            message ? <p>{message}</p> : null
+          }
 
           <button
             type='submit'
