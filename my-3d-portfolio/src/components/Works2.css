@@ -3,7 +3,7 @@
 }
 .header_Con.observerCatch{
     transition: 3s ease-in-out;
-    transform: scale(1);
+    transform: scale(0);
 }
 .project_Con{
     transition: 3s ease-in-out;
