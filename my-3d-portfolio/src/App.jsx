@@ -16,11 +16,13 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <div className="big_screen_content">
-        <Works />
-        </div>
-        <div className="small_screen_content">
-        <Works2 />
+        <div className="project_link" id="project">
+          <div className="big_screen_content">
+            <Works />
+          </div>
+          <div className="small_screen_content">
+            <Works2 />
+          </div>
         </div>
         <Feedbacks />
         <div className='relative z-0'>
@@ -28,7 +30,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }

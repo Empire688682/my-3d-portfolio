@@ -9,7 +9,7 @@ const Works = () => {
     const { ref: cl2Ref, inView: cl2Inview } = useInView({ triggerOnce: true });
 
     return (
-        <div className="small_screen_Con" id="project">
+        <div className="small_screen_Con">
             <div ref={cl1Ref} className={cl1Inview ? "header_Con observerCatch" : "header_Con"}>
                 <p className={`${styles.heroSubText}`}>My work</p>
                 <h2 className={`${styles.heroHeadText}`}>Projects.</h2>

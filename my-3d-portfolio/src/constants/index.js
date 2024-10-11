@@ -36,7 +36,7 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id: "https://jayempire.vercel.app/",
+    id: "https://jayempire.vercel.app",
     title: "Simple Portfolio",
   }
 ];
