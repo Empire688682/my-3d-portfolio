@@ -23,17 +23,21 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
+    id: "#about",
     title: "About",
   },
 
   {
-    id: "project",
+    id: "#project",
     title: "Projects",
   },
   {
-    id: "contact",
+    id: "#contact",
     title: "Contact",
+  },
+  {
+    id: "https://jayempire.vercel.app/",
+    title: "Simple Portfolio",
   }
 ];
 
