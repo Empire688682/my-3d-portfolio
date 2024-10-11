@@ -1,6 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
+import './appMyStyle.css';
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import Works2 from "./components/Works2";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -13,9 +15,13 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        
         <Tech />
+        <div className="big_screen_content">
         <Works />
+        </div>
+        <div className="small_screen_content">
+        <Works2 />
+        </div>
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />

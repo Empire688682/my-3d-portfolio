@@ -1,0 +1,9 @@
+.header_Con{
+    opacity: 0;
+    transform: scale(0.5);
+}
+.header_Con.observerCatch{
+    opacity: 1;
+    transition: 3s ease-in-out;
+    transform: scale(1);
+}

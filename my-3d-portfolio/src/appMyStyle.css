@@ -1,0 +1,13 @@
+.small_screen_content{
+    display: none;
+  }
+  @media (max-width: 865px){
+    .big_screen_content{
+      display: none;
+    }
+    .small_screen_content{
+      display: block;
+      margin: 0 10%;
+    }
+  }
+  
