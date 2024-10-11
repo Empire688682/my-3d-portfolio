@@ -25,7 +25,8 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <div ref={cl3Ref} key={index}  className="bg-black-100 p-8 rounded-2xl sm:w-[360px] w-full">
+         <div ref={cl3Ref} key={index} className={cl3Inview? "project_Con observerCatch":"project_Con"}>
+             <div className="bg-black-100 p-8 rounded-2xl sm:w-[360px] w-full">
             <div className="relative w-full h-[230px]">
               <img
                 src={project.image}
@@ -63,7 +64,8 @@ const Works = () => {
               ))}
             </div>
         </div>
-        ))}
+        
+         </div>))}
       </div>
     </div>
   );
