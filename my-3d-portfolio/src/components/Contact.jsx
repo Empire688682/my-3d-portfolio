@@ -70,6 +70,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4 px-3'>Your Name</span>
             <input
+            required
               type='text'
               name='name'
               value={formData.name}
@@ -81,6 +82,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4 px-3'>Your Subject</span>
             <input
+            required
               type='text'
               name='subject'
               value={formData.subject}
@@ -92,6 +94,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4 px-3'>Your email</span>
             <input
+            required
               type='email'
               name='email'
               value={formData.email}
@@ -103,6 +106,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4 px-3'>Your Message</span>
             <textarea
+            required
               rows={7}
               name='message'
               value={formData.message}
