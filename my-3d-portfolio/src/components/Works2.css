@@ -16,3 +16,12 @@
     opacity: 1;
     filter: grayscale(0%);
 }
+.observer{
+    transition: all 2s ease-in-out;
+}
+.observer.await{
+    transform: translateX(100%) translateY(100%) rotate(180deg);
+}
+.observer.catch{
+    transform: translateX(0%) translateY(0%);
+}
