@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-[#100d25] py-24 px-[5%] flex flex-wrap justify-center gap-5">
-      <div className="flex-1 mb-8 min-w-[300px]">
+      <div className="flex-1 mb-8 min-w-[250px]">
         <h1 className="text-white text-2xl font-bold mb-5">About Me</h1>
         <p className="text-white">
         I collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life.
