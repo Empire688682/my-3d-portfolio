@@ -8,6 +8,7 @@ import { slideIn } from "../utils/motion";
 import axios from "axios"
 
 const Contact = () => {
+  const url = "http://localhost:600"
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,7 +26,7 @@ const Contact = () => {
   const sendEmail = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/emailSender", formData);
+      const response = await axios.post(url + "/submit", formData);
       if (response.data.success) {
         setFormData({
           name: '',
