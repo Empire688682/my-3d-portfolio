@@ -19,7 +19,7 @@ const Footer = () => {
           <p className="text-white">Stay updated with our latest trends</p>
           <form className="flex flex-wrap items-center mt-2">
             <input type="text" placeholder='Enter Email Address' className="flex-1 border-none p-4 text-base outline-none" />
-            <button type="submit" className="p-4 bg-[#6cafe9] text-white text-base">Send</button>
+            <button type="submit" className="p-4 mt-5 bg-[#6cafe9] text-white text-base">Send</button>
           </form>
         </div>
       </div>
