@@ -10,14 +10,14 @@ const Footer = () => {
       <div className="flex-1 mb-8 min-w-[250px]">
         <h1 className="text-white text-2xl font-bold mb-5">About Me</h1>
         <p className="text-white">
-        I collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life.
+          I collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life.
         </p>
       </div>
       <div className="flex-1 mb-8 min-w-[250px]" >
         <h1 className="text-white text-2xl font-bold mb-5">Newsletter</h1>
         <div className="w-full">
           <p className="text-white">Stay updated with our latest trends</p>
-          <form className="flex items-center mt-2">
+          <form className="flex flex-wrap items-center mt-2">
             <input type="text" placeholder='Enter Email Address' className="flex-1 border-none p-4 text-base outline-none" />
             <button type="submit" className="p-4 bg-[#6cafe9] text-white text-base">Send</button>
           </form>
