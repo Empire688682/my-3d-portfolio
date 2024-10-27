@@ -30,7 +30,7 @@ const Footer = () => {
           <NavLink to='https://github.com/Empire688682' className="text-white w-12 h-12 flex items-center justify-center"><BsGithub style={{ width: "25px", height: "25px" }} /></NavLink>
           <NavLink to='https://www.instagram.com/jahwonempire/' className="text-white w-12 h-12 flex items-center justify-center"><BsInstagram style={{ width: "25px", height: "25px" }} /></NavLink>
           <NavLink to='https://x.com/AsehindeJwon' className="text-white w-12 h-12 flex items-center justify-center"><SlSocialTwitter style={{ width: "25px", height: "25px" }} /></NavLink>
-          <NavLink to='https://www.linkedin.com/in/asehinde-juwon-73b04b268' className="text-white w-12 h-12 flex items-center justify-center"><CiLinkedin style={{ width: "25px", height: "25px" }} /></NavLink>
+          <NavLink to='https://www.linkedin.com/in/juwon-asehinde-73b04b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' className="text-white w-12 h-12 flex items-center justify-center"><CiLinkedin style={{ width: "25px", height: "25px" }} /></NavLink>
         </div>
       </div>
     </div>
