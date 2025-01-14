@@ -15,7 +15,7 @@ const Works = () => {
                 <h2 className={`${styles.heroHeadText}`}>Projects.</h2>
             </div>
             <div className="w-full flex">
-                <p ref={cl2Ref} className={`mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] ${cl2Inview ? "observer catch" : "observer await"}`}>
+                <p className={`mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]`}>
                     The following projects highlight my expertise and experience through real-world examples of my work. Each project includes a brief overview, along with links to code repositories and live demos. These showcase my ability to tackle complex challenges, work with diverse technologies, and efficiently manage projects from concept to completion.
                 </p>
             </div>
